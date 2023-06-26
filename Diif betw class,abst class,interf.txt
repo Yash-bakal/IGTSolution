@@ -1,0 +1,30 @@
+[12:38 PM] Thanesh (Guest)
+
+ 
+ 
+
+
+
+    Class                     Abstarct Class             Interface 
+ 
+1) 
+
+
+    Class  A{​​​​​}​​​​​                    abstarct class A{​​​​​}​​​​​            interface I{​​​​​}​​​​​
+
+ 
+2)    A a = new A();   yes                 NO                 NO
+ 
+3)    A(){​​​​​}​​​​​                    yes                 NO
+ 
+4)    int a;//0                     int a;                int a=10;
+ 
+5)     not suport multyple inheritance             no                 yes it will support
+ 
+6)     can we hide the implementation  ?            yes :(0 -100%)            100%  
+ 
+ 
+ 
+                do practical 
+ 
+
