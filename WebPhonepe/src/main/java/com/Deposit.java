@@ -24,36 +24,39 @@ public class Deposit extends HttpServlet {
     String pan=request.getParameter("upan");
         int phn=Integer.parseInt(request.getParameter("uphn"));
         int amount=Integer.parseInt(request.getParameter("uamount"));
-        int balance=Integer.parseInt(request.getParameter("ubalance"));
+       
         
-        int currentbalance=amount+balance;
+      
         response.setContentType("text/html");
         try {        
             Class.forName("com.mysql.jdbc.Driver");
             Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/igt1","root", "Sqlreset123@#");
- 
-   if(pan!=null) {
-      PreparedStatement pstmt=con.prepareStatement("update bank set balance=? where pan=?");
+           
+            
+    if(acc!=0) {
+      	      PreparedStatement pstmt=con.prepareStatement("update bank set balance=balance+? where acc=?");
 
-      pstmt.setInt(1, currentbalance);
+      	      pstmt.setInt(1, amount);
+      	      pstmt.setInt(2, acc);
+                pstmt.execute();
+                pstmt.close();
+      	  }
+    
+    
+    else if(pan!=null) {
+      PreparedStatement pstmt=con.prepareStatement("update bank set balance=balance+? where pan=?");
+
+      pstmt.setInt(1, amount);
       pstmt.setString(2, pan);
       pstmt.execute();
       pstmt.close();
    }
    
-   else if(acc!=0) {
-	      PreparedStatement pstmt=con.prepareStatement("update bank set balance=? where acc=?");
 
-	      pstmt.setInt(1, currentbalance);
-	      pstmt.setInt(2, acc);
-          pstmt.execute();
-          pstmt.close();
-	  }
-   
    else if(phn!=0) {
-	      PreparedStatement pstmt=con.prepareStatement("update bank set balance=? where phn=?");
+	      PreparedStatement pstmt=con.prepareStatement("update bank set balance=balance+? where phn=?");
 
-	      pstmt.setInt(1, currentbalance);
+	      pstmt.setInt(1, amount);
 	      pstmt.setInt(2, phn);
           pstmt.execute();
           pstmt.close();

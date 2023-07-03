@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+.Create-block {
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #BB8FCE;
+    margin-top:50px;
+    margin-left:500px
+}
+
+.Create-block button {
+    width: 100%;
+    height: 40px;
+    background: #8E44AD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #e15960;
+    color: #ffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.Create-block button:hover {
+     background: #BB8FCE;
+}
+
+</style>
+<body bgcolor="#f7f7f7">
+<div style="text-align: center;" class="Create-block">
+	<h1> Create PhonePe Account </h1>
+
+	<form action="Create.jsp">
+	<center>
+	<table align="center">
+	<tr>
+		<th>ID</th>
+		<th><input type="integer" placeholder="Enter ID" name="uid" style="width: 250px;height: 40px;border-radius: 10px"></th>
+	</tr>
+	
+	<tr>
+		<th>NAME </th>
+		<th><input type="text" name="uname" placeholder="Enter Name" style="width: 250px;height: 40px;border-radius: 10px"></th>
+	</tr>
+	
+	<tr>
+		<th>ACC NO</th>
+		<th><input type="integer" name="uacc" placeholder="Enter Account Number" style="width: 250px;height: 40px;border-radius: 10px"></th>
+	</tr>
+	
+	<tr>
+		<th>IFSC</th>
+		<th><input type="text" name="uifsc" placeholder="Enter IFSC Code" style="width: 250px;height: 40px;border-radius: 10px"></th>
+	</tr>
+	
+	<tr>
+		<th>PAN NO</th>
+		<th><input type="text" name="upan" placeholder="Enter PAN Number" style="width: 250px;height: 40px;border-radius: 10px"></th>
+	</tr>
+	
+		<tr>
+		<th>PHN NO</th>
+		<th><input type="integer" name="uphn" placeholder="Enter Phone Number" style="width: 250px;height: 40px;border-radius: 10px"></th>
+	</tr>
+	
+		<tr>
+		<th>AADHAR NO</th>
+		<th><input type="integer" name="uadhar" placeholder="Enter Aadhar Number" style="width: 250px;height: 40px;border-radius: 10px"></th>
+	</tr>
+	
+		<tr>
+		<th>INITIAL BALANCE</th>
+		<th><input type="integer" name="ubalance" placeholder="Enter Initial Balance" style="width: 250px;height: 40px;border-radius: 10px"></th>
+	</tr>
+	
+	<tr>
+	<th></th>
+	<th><button type="submit">Submit</button></th>
+	</tr>
+	
+	</table>
+	</center>
+	</form>
+</div>
+</body>
+</html>
