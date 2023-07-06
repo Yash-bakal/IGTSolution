@@ -1,0 +1,27 @@
+
+
+
+<beans xmlns = "http://www.springframework.org/schema/beans" 
+
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+ 
+
+    <bean id="prod" class="com.Product">
+
+
+        <constructor-arg name="pid"><value>100</value></constructor-arg>
+
+        <constructor-arg name="name"><value>samsung</value></constructor-arg>
+
+        <constructor-arg name="price"><value>21000</value></constructor-arg>
+
+        <constructor-arg name="pdesc"><value>Made in India</value></constructor-arg>
+
+
+    </bean>
+
+</beans>

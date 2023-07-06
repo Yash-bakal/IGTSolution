@@ -1,0 +1,16 @@
+
+<beans xmlns = "http://www.springframework.org/schema/beans" 
+xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="stud" class="com.Student">
+     
+     <property name="sid"><value>1</value></property>
+     <property name="sname"><value>Suresh</value></property>
+    <property name="smark"><value>100</value></property>
+     <property name="ssection"><value>DBMS</value></property>
+     
+   </bean>
+	
+</beans>
