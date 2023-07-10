@@ -14,7 +14,7 @@ public class Demo4 {
 	   //TreeSet al = new TreeSet(); //no dup+ sorted order
 //HashMap map = new HashMap<>();//no duplicate	   
 //LinkedHashMap map = new LinkedHashMap<>();//no dup + user entered order	   
-  TreeMap map = new TreeMap<>();
+  TreeMap map = new TreeMap<>();//no dup + sorted
   
   map.put(111,"Suresh");
   map.put(555,"Ramesh");
@@ -23,7 +23,7 @@ public class Demo4 {
   map.put(777,"Pratha");
   map.put(666,"Mavith");
   
- Set s = map.entrySet();
+ Set s = map.entrySet();//using for no duplicate
  
  Iterator i = s.iterator(); 
  while(i.hasNext()) {

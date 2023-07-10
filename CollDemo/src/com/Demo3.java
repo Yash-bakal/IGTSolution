@@ -14,8 +14,8 @@ public class Demo3 {
         //Stack al = new Stack<>();
     		
      //SET
-   //HashSet al= new HashSet<>(); //no duplicate
-   //LinkedHashSet al = new LinkedHashSet<>(); //no duplicates + user entered order
+  // HashSet al= new HashSet<>(); //no duplicate
+  // LinkedHashSet al = new LinkedHashSet<>(); //no duplicates + user entered order
    TreeSet al =new TreeSet();//no dup+ sorted order
    
     	al.add(100);
@@ -26,10 +26,10 @@ public class Demo3 {
         al.add(450);
     	al.add(987);
         al.add(600);      
-      //  al.add("Abc");
-      //  al.add("XYZ");
-      //  al.add("LMN");
-      //  al.add("DEF");
+//        al.add("Abc");
+//        al.add("XYZ");
+//        al.add("LMN");
+//        al.add("DEF");
 
      Iterator i=al.iterator(); 
      while(i.hasNext()) {
